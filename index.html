@@ -29,14 +29,14 @@
 		<div id="myNav" class="overlay">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <div class="overlay-content">
-			<a href="#">Home</a>
-			<a href="#">How It Works</a>
-			<a href="#">Ad Placement</a>
+			<a href="#page-top">Home</a>
+			<a href="#how-it-works">How It Works</a>
+			<a href="#placement">Ad Placement</a>
 		  </div>
 		</div>
 
 		<div class="topnav">
-		  <a class="active" href="#home">Your Logo</a>
+		  <a class="active home-logo" href="#home">Your Logo</a>
 		  <span onclick="openNav()">&#9776;</span>
 		</div>
 
@@ -211,6 +211,24 @@
 		<script>
 		              new WOW().init();
 		              </script>
+
+		<script>
+			(function($) {
+			  "use strict"; // Start of use strict
+
+
+
+			  // Collapse the navbar when page is scrolled
+			  $(window).scroll(function() {
+			    if ($(".home-logo").offset().top > 100) {
+			      $(".home-logo").addClass("logo-shrink");
+			    } else {
+			      $(".home-logo").removeClass("logo-shrink");
+			    }
+			  });
+
+			})(jQuery); // End of use strict
+		</script>
 
 		<!-- Custom scripts for this template -->
 		
