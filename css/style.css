@@ -933,6 +933,7 @@ section#placement {
 		border-bottom: 1px solid #fff;
 		color: #fff;
 		background-color: #000;
+		border-radius: 0;
 	}
 
 	.btn-submit {
@@ -952,6 +953,12 @@ section#placement {
 	.form-group {
 	    margin-bottom: 2rem;
 	}
+	@media (min-width: 768px) {
+		.form-group {
+	    	padding-left: 10px;
+	    	padding-right: 10px;
+		}
+	}
 
 /*Footer*/
 footer a, footer a:hover{
@@ -966,6 +973,7 @@ footer a, footer a:hover{
 	.footer-above .footer-logo {
 		font-weight: 700;
 		font-family: "Poppins",Helvetica,Arial,sans-serif;
+		font-size: 20px;
 	}
 	.footer-above ul {
 	 list-style-type: none;
@@ -991,12 +999,20 @@ footer a, footer a:hover{
 		.footer-above ul li:last-child::after {
 				content: none;
 		}
-		.footer-above span {
+		.footer-text-left {
+			font-size: 20px;
+			width: 100%;
+		}
+		.footer-center-align {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+			.footer-subtext {
+				font-size: 16px;
+				font-weight: 400;
+			}
 			.footer-above span i{
 				margin-right: 10px;
 			}
